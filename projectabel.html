@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>login formt</title> -->
+    <!-- the page refresh  itselfautomatically at 3 sec -->
+    <!-- 
+        auto refresh every 3 sec
+     -->
+    <!-- ignore this link part because this is not in the scope of our assignment 
+    i used to link my css file using this link tag  -->
+    <link rel="stylesheet" type="text/css" href="anotherlogin.css">
+    <!-- using  internal css i tried to modify the body i have done this 
+    in the css part also but for now lets leave this also -->
+    <style>
+        /* changed the backgroung to those attribute values  */
+        body  {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+             'Trebuchet MS', sans-serif;
+             background: linear-gradient(120deg,#2980b9,#8e44ad);
+             overflow: hidden;
+        }
+        /* erased the underline marker  */
+        a {
+            text-decoration: none;
+            font-family:Cambria;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+        label {
+            font-family:Arial Narrow Bold;
+            font-size: 18px;
+
+        }
+        abbr {
+            font-family:Helvetica;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        #mid {
+            background:white;
+            padding-left: 150px;
+            padding-right: 10px;
+            margin-top: 20px;
+            width: 55%;
+           height: 430px;
+           padding-top: 2px;
+            border-radius: 10px;
+            margin-left: 300px;
+            margin-right: 300px;
+           
+    
+        }
+        /* style the background color of this div */
+        
+   /* here am trying to use internal css for both input type text and password at the
+   same time if you want you can add another input types also */
+        input[ type=text] , input[type=password]{
+width: 50%;
+font-family:Times New Roman;
+margin:8px,0px ;
+ padding: 12px ,20px;
+ border:3px solid rgb(43, 127, 216);
+border-radius: 10px;
+padding:15px
+            }
+    </style>
+</head>
+<!-- now am trying to use inline css to change the font color to black  and another 
+    attributes like padding  text-allign -->
+<body  style="color: black;" >
+    <header>Wellcome to Github official Login page</header>
+    <div id="mid">
+        <!-- for the h1 i used inline csss thats more powerfull than class id and sibiling 
+        selctor  -->
+    <h1 style=" font-family: 'Courier New', Courier, monospace;  
+    padding-left: 100px;">
+        LoGin form
+    </h1>
+    <!-- now lets style the form using padding attribute  to allign the box at the center -->
+    <form 
+     >
+<label>
+    username:</label>
+    <!-- here we used the placeholder and name to style  our username box  -->
+    <input  type="text" placeholder="enter username" name="username"
+    maxlength="10" required> 
+ <br>
+ <br>
+ <!-- in the password i adjusted the min and max length for the password  -->
+   <label> 
+    password: 
+   </label>
+   <!-- here we added maxlenght and minlength to adjust the password length to make it 
+both hard to crack and easy to remember -->
+   <input type="password" placeholder="enter password"  name="password"
+name="password" required ; maxlength="16" minlength="8">
+<br>
+
+<!-- we changed our  button type to submit to send the data we entred above -->
+<button id="login" type="submit">Login</button>
+<!-- i also addes cancel btn if the user want to exit the login process  -->
+<button id="cancel" type="submit">Cancel</button>
+<br>
+<br>
+<!-- checkbox to make it easier to login for the next time  -->
+<input  type="checkbox"checked="checked" >Remember me &nbsp;  &nbsp; &nbsp; &nbsp;
+<a  href="forgot.html" target="_blank" id="forgot"> &nbsp;  &nbsp;&nbsp;Forgot password</a>
+<br>
+<!-- this programe is still undergoing and i saved this part for the next assignment you told 
+us about so now it doesnt do anything bytheway i used the target to open the new
+ loading file to new 
+tab-->
+<!-- now lets say the client didint have an acc what shall we do now lets create new 
+anca tag to direct him to the signin page so he could have an acc -->
+<br>
+<label class="do">Don't have acc yet?</label>
+<br> 
+<a id="reg" href="signin.html" target="_blank" id="spot"> &nbsp; Register</a>
+<br> <br>
+<!-- another login method using g mail with class name = do to acces both at once 
+and also open new tab directed to g mail an for spacing purpose i used &nbsp; only -->
+<label class="do">&nbsp; &nbsp;Log in using your: </label>
+<a  type="email"  href="mailto:" target="_blank" > &nbsp; G mail</a>
+</div>
+<!-- i used the abbr attribute to make the reading process easy and make the abbrvation known 
+foe mt tech solution company -->
+    </form>
+    <br>
+    <div>
+        <footer style="margin-left: 900px;">
+            <a href="#" >Home page &nbsp; &nbsp;&nbsp;</a>
+            <a href="#" >Telegram &nbsp;&nbsp;&nbsp;</a>
+            <a href="#" >Twitter &nbsp;&nbsp;&nbsp;</a>
+            <a href="#" >Facebook &nbsp;&nbsp;&nbsp;</a>
+        </footer>   
+    </div>
+    <hr>
+<footer>
+   <abbr title="Abel Boke">AB &nbsp; </abbr>
+   <label>Tech solution</label>
+</footer>
+
+<!-- using the footer tag and ancha tag i listed all our social media pages 
+in the end of the login oage  -->
+</div>
+</div>
+
+</body>
+</html>
+<!-- HTML and XHTML Features
+HTML and XHTML are two of the most popular markup languages used for developing web pages 
+and applications. HTML is the standard markup language for creating web pages, while XHTML
+ is a stricter and more standardized version of HTML. Both HTML and XHTML include a wide
+  range of features, such as support for multimedia, styling, and scripting.
+
+HTML and XHTML both have features to create rich and interactive web pages and applications. 
+Some of the most popular HTML and XHTML features include:
+
+Support for multimedia: Both HTML and XHTML support various forms of multimedia, such as
+ images, video, and audio. HTML also supports animated images and graphics.
+Styling: Both HTML and XHTML offer a wide range of options for styling web pages. CSS 
+(Cascading Style Sheets) is the most commonly used style sheet language, and it can be 
+used to style both HTML and XHTML documents.
+Scripting: HTML and XHTML both support various forms of scripting, such as JavaScript. 
+Scripting can be used to add interactivity to web pages and applications.
+Forms: Forms are one of the most important features of HTML and XHTML. Forms allow users 
+to input data, which can then be processed by a server-side script.
+Tables: Tables are another important feature of HTML and XHTML. Tables can be used to display 
+tabular data, such as product information or financial data.
+Links: Links are one of the most basic features of HTML and XHTML. Links allow users to 
+navigate between web pages.
+Metadata: Metadata is information about a web page or document. It can include information
+ such as the author, keywords, and description.
+HTML and XHTML are two of the most popular markup languages used for developing web pages
+ and applications. Both HTML and XHTML include a wide range of features, such as support
+  for multimedia, styling, and scripting. HTML is the standard markup language for creating
+   web pages, while XHTML is a stricter and more standardized version of HTML -->
+   <!-- The Most Important Differences from HTML
+<!DOCTYPE> is mandatory
+The xmlns attribute in <html> is mandatory
+<html>, <head>, <title>, and <body> are mandatory
+Elements must always be properly nested
+Elements must always be closed
+Elements must always be in lowercase
+Attribute names must always be in lowercase
+Attribute values must always be quoted
+Attribute minimization is forbidden -->
+
+<!-- XHTML vs HTML Specification
+HTML and XHTML are closely related and therefore can be documented together. Both HTML
+ 4.01 and XHTML 1.0 have three sub specifications – strict, loose and frameset. The 
+ difference opening declarations for a document distinguishes HTML and XHTML. Other 
+ differences are syntactic. HTML allows shortcuts like elements with optional tags,
+  empty elements without end tags. XHTML is very strict about opening and closing tags.
+   XHTML uses built in language defining functionality attribute. All syntax requirements 
+   of XML are included in a well formed XHTML document.
+
+Note, though, that these differences apply only when an XHTML document is served as an 
+application of XML; that is, with a MIME type of application/xhtml+xml, application/xml,
+ or text/xml. An XHTML document served with a MIME type of text/html must be parsed and 
+ interpreted as HTML, so the HTML rules apply in this case. A style sheet written for an
+  XHTML document being served with a MIME type of text/html may not work as intended if 
+  the document is then served with a MIME type of application/xhtml+xml. For more
+   information about MIME types, make sure to read MIME Types.
+
+This can be especially important when you’re serving XHTML documents as text/html. 
+Unless you’re aware of the differences, you may create style sheets that won’t work 
+as intended if the document’s served as real XHTML.
+
+Where the terms “XHTML” and “XHTML document” appear in the remainder of this section,
+ they refer to XHTML markup served with an XML MIME type. XHTML markup served as text/html 
+ is an HTML document as far as browsers are concerned. -->
+
+ <!--   Similarities between the two:
+Basic Structure:
+Both XHTML and HTML5 have the same basic structure, consisting of a head and a body. 
+The head contains information about the document, such as the title and any scripts 
+or stylesheets. The body contains the content that is displayed on the web page.
+Semantics:
+Both XHTML and HTML5 use semantic markup, which means that the tags used to structure
+ the content are meaningful and descriptive. This helps search engines and screen readers
+  to understand the content and improve accessibility.
+Browser Support:
+Both XHTML and HTML5 are supported by all modern web browsers. This means that web 
+developers can choose either language and be confident that their pages will be displayed 
+correctly in most browsers.
+Separation of Content and Presentation:
+Both XHTML and HTML5 encourage the separation of content and presentation, which means 
+that the content should be structured using semantic markup, while the presentation
+ should be handled separately using CSS (Cascading Style Sheets).
+Accessibility:
+Both XHTML and HTML5 prioritize accessibility and provide tools and techniques for 
+creating accessible web pages. This includes using semantic markup, providing alternative 
+text for images, and using ARIA (Accessible Rich Internet Applications) attributes to 
+improve accessibility for screen readers and other assistive technologies-->
